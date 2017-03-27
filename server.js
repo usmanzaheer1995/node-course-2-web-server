@@ -49,7 +49,7 @@ app.get('/', (request, response) => {
 
 app.get('/projects', (request, response) => {
     response.render('projects.hbs', {   //render checks for templates you have made, in this case about.hbs and home.hbs
-        pageTitle: 'Home page',
+        pageTitle: 'Portfolio page',
         //welcomeMsg: 'Welcome to this page.',
         //currentYear: new Date().getFullYear(),
     });
