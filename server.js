@@ -47,6 +47,14 @@ app.get('/', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {   //render checks for templates you have made, in this case about.hbs and home.hbs
+        pageTitle: 'Home page',
+        //welcomeMsg: 'Welcome to this page.',
+        //currentYear: new Date().getFullYear(),
+    });
+});
+
 app.get('/about', (request, response) => {
     //response.send('About Page.');   //sent html through the send function
     response.render('about.hbs', {
